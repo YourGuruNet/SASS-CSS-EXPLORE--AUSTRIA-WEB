@@ -1,0 +1,43 @@
+.card {
+  // alow smoothy rotate image
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+
+  &__side {
+    height: 50rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0.3rem;
+    box-shadow: 0 1.5rem 4rem rgba($main-black, 0.4);
+    backface-visibility: hidden; // hide opposite side of card
+    &--front {
+      background-color: blue;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          $secondary-orange-light,
+          $secondary-orange-dark
+        );
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    // main rotate property
+    transform: rotateY(180deg);
+  }
+  &:hover &__side--back {
+    // main rotate property
+    transform: rotateY(0);
+  }
+}
