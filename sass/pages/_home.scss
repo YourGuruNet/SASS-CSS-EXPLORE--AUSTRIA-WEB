@@ -27,8 +27,30 @@
 }
 
 .section-tours {
+  height: 170vh;
   background-color: $color-grey-light-1;
   padding: 25rem 0;
   margin-top: -25rem;
   font-weight: 700;
+}
+
+.section-stories {
+  margin-top: -23rem;
+  padding: 20rem 0;
+  height: 150vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($light-blue, 0.8),
+      rgba($medium-blue, 0.8)
+    ),
+    url(../img/hero-3.jpg);
+  background-size: cover;
+  background-position: bottom;
+  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+  clip-path: polygon(
+    0 20%,
+    100% 0,
+    100% 100%,
+    0 80%
+  ); /*alow to shape elements*/
 }

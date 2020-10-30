@@ -29,6 +29,14 @@
       background-color: white;
     }
   }
+
+  &--blue {
+    background-color: $light-blue;
+    color: $main-light;
+    &::after {
+      background-color: $light-blue;
+    }
+  }
   &::after {
     content: "";
     display: inline-block;
@@ -59,7 +67,7 @@
     padding: 0.3rem;
     transition: all 0.2s;
   }
-  &:hover{
+  &:hover {
     color: $main-light;
     background-color: $medium-blue;
     box-shadow: 0 1rem 2rem rgba($main-black, 0.4);
@@ -70,4 +78,25 @@
     transform: translateY(0);
   }
 }
-
+.btn-text--white {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $main-light;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 0.1rem solid $main-light;
+    padding: 0.3rem;
+    transition: all 0.2s;
+  }
+  &:hover {
+    color: $medium-blue;
+    background-color: $main-light;
+    box-shadow: 0 1rem 2rem rgba($main-black, 0.4);
+    transform: translateY(-0.2rem);
+  }
+  &:active {
+    box-shadow: 0 1rem 1rem rgba($main-black, 0.4);
+    transform: translateY(0);
+  }
+}

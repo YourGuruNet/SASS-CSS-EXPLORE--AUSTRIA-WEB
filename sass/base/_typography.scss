@@ -28,29 +28,28 @@
 .heading-secondary {
   font-size: 3.5rem;
   text-transform: uppercase;
-  transition: all .2s;
+  transition: all 0.2s;
   /* This lines alow to change text color to linear-gradient*/
-  display: inline-block;                                                
-  background-image: linear-gradient(to left, $dark-blue, $medium-blue); 
+  display: inline-block;
+  background-image: linear-gradient(to left, $dark-blue, $medium-blue);
   -webkit-background-clip: text;
   color: transparent;
-  
 
   &:hover {
     transform: skewX(10deg) scale(1.1);
-    text-shadow: .5rem 1rem 2rem rgba($main-black, 0.4);
+    text-shadow: 0.5rem 1rem 2rem rgba($main-black, 0.4);
   }
 }
 
 .heading-tertiary {
-font-size: $default-font-size;
-font-weight: 700;
-text-transform: uppercase;
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .paragraph {
   font-size: $default-font-size;
   font-weight: 400;
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 3rem;
-  };
+  }
 }
