@@ -20,13 +20,35 @@
     <title>Explore Austria</title>
   </head>
   <body>
+
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <label for="navi-toggle" class="navigation__button">
+
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="" class="navigation__link">About Austria</a></li>
+          <li class="navigation__item"><a href="" class="navigation__link">Your benefits</a></li>
+          <li class="navigation__item"><a href="" class="navigation__link">Popular tours</a></li>
+          <li class="navigation__item"><a href="" class="navigation__link">Stories</a></li>
+          <li class="navigation__item"><a href="" class="navigation__link">Book now</a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+
     <header class="header">
       <div class="header__text-box">
         <h1 class="heading-primary">
           <span class="heading-primary--main">Austria</span
           ><span class="heading-primary--sub">is where adventure begins</span>
         </h1>
-        <a href="#" class="btn btn--white btn--animated">Discover Austria</a>
+        <a href="#section-tours" class="btn btn--white btn--animated">Discover Austria</a>
       </div>
     </header>
 
@@ -58,7 +80,7 @@
               life and enjoy wildlife!
             </p>
 
-            <a href="#" class="btn-text">Read more &rarr;</a>
+            <a href="#popup" class="btn-text">Read more &rarr;</a>
           </div>
           <div class="col-1-of-2">
             <div class="composition">
@@ -160,7 +182,7 @@
         </div>
       </section>
 
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Austrian best Tour offers</h2>
         </div>
@@ -190,7 +212,7 @@
                    <p class="card__price--only">Today Only</p>
                    <p class="card__price--value"> $ 259.49</p>
                  </div>
-                 <a href="#" class="btn btn--white">Book Now</a>
+                 <a href="#popup" class="btn btn--white">Book Now</a>
                </div>
               </div>
             </div>
@@ -219,7 +241,7 @@
                  <p class="card__price--only">Today Only</p>
                  <p class="card__price--value"> $ 159.49</p>
                </div>
-               <a href="#" class="btn btn--white">Book Now</a>
+               <a href="#popup" class="btn btn--white">Book Now</a>
              </div>
             </div>
           </div></div>
@@ -248,14 +270,14 @@
                  <p class="card__price--only">Today Only</p>
                  <p class="card__price--value"> $ 149.49</p>
                </div>
-               <a href="#" class="btn btn--white">Book Now</a>
+               <a href="#popup" class="btn btn--white">Book Now</a>
              </div>
             </div>
           </div></div>
         </div>
         </div>
         <div class="u-center-text u-margin-bottom-medium">
-          <a href="#" class="btn btn--blue">See all tours</a>
+          <a href="#popup" class="btn btn--blue">See all tours</a>
         </div>
       </section>
       <section class="section-stories">
@@ -294,7 +316,7 @@
           </div>
         </div>
 <div class="u-center-text u-margin-bottom-medium">
-          <a href="#" class="btn-text--white">Reed all stories &rarr;</a>
+          <a href="#popup" class="btn-text--white">Reed all stories &rarr;</a>
         </div>
       </section>
 
@@ -302,7 +324,7 @@
         <div class="row">
           <div class="book">
             <div class="book__form">
-              <form action="#" class="form">
+              <form action="#popup" class="form">
                 <div class="u-center-text ">
                   <h2 class="heading-secondary u-margin-bottom-medium" >Contact for more</h2>
                 </div>
@@ -346,11 +368,11 @@
               <div class="footer__navigation">
                   <ul class="footer__list">
                   <li class="footer__item">
-                  <li class="footer__item">  <a href="#" class="footer__link">Company</a></li>
-                  <li class="footer__item">  <a href="#" class="footer__link">Contact</a></li>
-                  <li class="footer__item">  <a href="#" class="footer__link">Carrier</a></li>
-                  <li class="footer__item"> <a href="#" class="footer__link">Privacy</a></li>
-                  <li class="footer__item"> <a href="#" class="footer__link">Terms</a></li>
+                  <li class="footer__item">  <a href="#popup" class="footer__link">Company</a></li>
+                  <li class="footer__item">  <a href="#popup" class="footer__link">Contact</a></li>
+                  <li class="footer__item">  <a href="#popup" class="footer__link">Carrier</a></li>
+                  <li class="footer__item"> <a href="#popup" class="footer__link">Privacy</a></li>
+                  <li class="footer__item"> <a href="#popup" class="footer__link">Terms</a></li>
                 </ul>
               </div>
             </div>
@@ -361,6 +383,23 @@
     </footer>
   </section>
 
+  <div class="popup" id="popup">
+    <div class="popup__content">
+      <div class="popup__left">
+        <img src="/img/nat-1.jpg" alt="Austria" class="popup__img">
+        <img src="/img/nat-2.jpg" alt="Austria" class="popup__img">
+      </div>
+      <div class="popup__right">
+        <a href="#section-tours" class="popup__close">&times;</a>
+        <h2 class="heading-secondary">Book your Austrian adventure</h2>
+        <h3 class="heading-tertiary">Read before book your trip</h3>
+        <p class="popup__text">
+          Holiday at the 4*superior hotel Oberforsthof, in St. Johann im Pongau, in Alpendorf, surrounded by the Austrian Alps means: sit back and be inspired... by the beautiful ambience, the breathtaking scenery - in spring, summer, autumn and winter, the cozy rooms and suites, the delicious cuisine, our Feng Shui garden, the natural swimming pond, the massage pavillion, the indoor swimming pool, lounge chairs, the perfect location next to the ski slopes
+        </p>
+        <a href="#" class="btn btn--blue">Book now</a>
+      </div>
+    </div>
+  </div>
     <!--  Grid Examples
     <section class="grid-test">
       <div class="row">
