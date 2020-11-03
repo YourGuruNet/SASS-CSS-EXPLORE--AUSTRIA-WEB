@@ -35,6 +35,15 @@
   -webkit-background-clip: text;
   color: transparent;
 
+  @include respond(Size-900) {
+    font-size: 3rem;
+  }
+  @include respond(Size-600) {
+    font-size: 2.5rem;
+  }
+  @include respond(Size-400) {
+    font-size: 2rem;
+  }
   &:hover {
     transform: skewX(10deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba($main-black, 0.4);

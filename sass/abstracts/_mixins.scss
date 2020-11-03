@@ -5,3 +5,33 @@
     clear: both;
   }
 }
+
+// Media query
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == Size-400 {
+    @media (max-width: 25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == Size-600 {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+  @if $breakpoint == Size-900 {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == Size-1200 {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+  @if $breakpoint == Size-1800 {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

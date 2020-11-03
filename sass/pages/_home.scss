@@ -3,12 +3,19 @@
   padding: 25rem 0;
   margin-top: -25rem;
   font-weight: 700;
+  @include respond(Size-900) {
+    margin-top: -30rem;
+    padding-top: 30rem;
+    padding-bottom: 60rem;
+  }
+  @include respond(Size-400) {
+    margin-top: -30rem;
+  }
 }
 
 .section-features {
   margin-top: -22rem;
   padding: 20rem 0;
-  height: 110vh;
   background-image: linear-gradient(
       to right bottom,
       rgba($light-blue, 0.8),
@@ -24,10 +31,13 @@
     100% 100%,
     0 80%
   ); /*alow to shape elements*/
+  @include respond(Size-900) {
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+  }
 }
 
 .section-tours {
-  height: 170vh;
   background-color: $color-grey-light-1;
   padding: 25rem 0;
   margin-top: -25rem;
@@ -37,7 +47,6 @@
 .section-stories {
   margin-top: -23rem;
   padding: 20rem 0;
-  height: 155vh;
   background-image: linear-gradient(
       to right bottom,
       rgba($light-blue, 0.8),
@@ -53,12 +62,19 @@
     100% 100%,
     0 80%
   ); /*alow to shape elements*/
+  @include respond(Size-900) {
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+  }
 }
 
 .section-book {
   padding: 15rem 0;
   background-color: $color-grey-light-1;
   margin-top: -23rem;
+  @include respond(Size-900) {
+    padding: 20rem 0;
+  }
 }
 .book {
   margin-top: 8rem;
@@ -74,9 +90,23 @@
   border-radius: 0.3rem;
   box-shadow: 0 1.5rem 4rem rgba($main-black, 0.7);
 
+  @include respond(Size-900) {
+    background-image: linear-gradient(
+        rgba($main-light, 0.8),
+        rgba($main-light, 0.8)
+      ),
+      url(../img/mail.jpg);
+    background-size: cover;
+  }
+
   &__form {
     width: 50%;
     float: right;
     padding: 6rem;
+
+    @include respond(Size-900) {
+      width: 100%;
+      float: none;
+    }
   }
 }
