@@ -1,5 +1,5 @@
 .story {
-  width: 75%;
+  width: 55%;
   padding: 3rem 6rem;
   margin: 3rem auto;
   box-shadow: 0 3rem 6rem rgba($main-black, 0.7);
@@ -23,6 +23,7 @@
     transform: translateX(-3rem) skewX(12deg);
     position: relative;
     overflow: hidden;
+
     @include respond(Size-900) {
       shape-outside: none;
       float: none;
